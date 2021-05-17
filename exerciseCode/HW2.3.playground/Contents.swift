@@ -31,5 +31,5 @@ func searchMaxSection(arr : [Int]) {
     print("최대값 : \(maxValue.max()!)")
 }
 
-searchMaxSection(arr: [31, -41, 59, 26, -53, 58, 97, -93, -23, 84])
+searchMaxSection(arr: [31, -21, 57, -26, 53, 58, 95, -53, -23, 84])
 

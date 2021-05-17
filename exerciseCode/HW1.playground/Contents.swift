@@ -34,6 +34,17 @@ func findSumValue(list : [Int], length : Int ) -> Int {
     
 }
 
+func sum(_ A : [Int], _ n : Int) -> Int{
+    if n == 1 {
+        return A[0]
+    }
+    else {
+        return sum(A, n-1) + A[n-1]
+    }
+}
+
+let arr = [1,3,5,6,31,2]
+print(sum(arr, arr.count))
 
 func minIndex(list : [Int], i : Int , j : Int) -> Int {
     let min : Int

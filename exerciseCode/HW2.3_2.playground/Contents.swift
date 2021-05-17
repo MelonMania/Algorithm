@@ -30,6 +30,6 @@ func searchMaxSection(arr : [Int], left : Int, right : Int) {
     }
 }
 
-let arr = [31, -41, 59, 26, -53, 58, 97, -93, -23, 84]
+let arr = [31, -21, 57, -26, 53, 58, 95, -53, -23, 84]
 searchMaxSection(arr: arr , left: 0, right: arr.count - 1)
 print(maxDic[maxArray.max()!]!)

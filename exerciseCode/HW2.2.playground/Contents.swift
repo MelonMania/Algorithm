@@ -12,7 +12,7 @@ func search(arr : [Int]) -> Int { // 2.2의 (a)
     }
     
     for i in 0 ... positive.count - 1 {
-        if positive[i] == i {
+        if positive[i] == i { 
             ans = i
         }
     }

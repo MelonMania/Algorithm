@@ -36,5 +36,3 @@ func solution(_ brown:Int, _ yellow:Int) -> [Int] {
 
 print(solution(10, 2))
 
-12
-[1,12] [2,6] [3,4] [4,3] [6, 2] [12, 1]

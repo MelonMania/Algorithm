@@ -9,7 +9,7 @@ import Foundation
 
 var K = Int(readLine()!)!
 
-let coinValue : [Int] = [365, 91, 52, 28, 13, 7, 4, 1]
+let coinValue : [Int] = [1, 5, 9, 13, 24]
 var index : Int = 0
 var count : Int = 0
 

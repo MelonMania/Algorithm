@@ -43,9 +43,7 @@ for baseNum in 1 ... cnt {
             check = 1
         }
     }
-    
     check = 0
-   
 }
 
 for _ in 0 ..< result.count {

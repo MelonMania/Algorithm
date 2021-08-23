@@ -18,10 +18,11 @@ for char in input {
     }
 }
 
+
 if check == 0 {
-    let input = readLine()!.components(separatedBy: " ").map{ $0 }
+    let set = input.components(separatedBy: " ").map{ $0 }
     
-    for word in input {
+    for word in set {
         for char in word.reversed() {
             print(char, terminator: "")
         }
@@ -34,32 +35,33 @@ else {
     for char in input {
         if char == "<" {
             tag = true
-            if full.isEmpty == false {
-                let input = full.components(separatedBy: " ").map{ $0 }
-                
-                if input.count > 1 {
-                    for word in input {
-                        for char in word.reversed() {
-                            print(char, terminator: "")
-                        }
-                        cnt += 1
-                        if input.count > cnt {
-                            print("",terminator: " ")
-                        }
-                    }
-                    cnt = 0
-                }
-               
-                else {
-                    for char in full.reversed() {
-                        print(char, terminator: "")
-                    }
-                }
-            }
-            full = ""
         }
         else if char == ">" {
             tag = false
+        }
+        
+        if full.isEmpty == false {
+            let input = full.components(separatedBy: " ").map{ $0 }
+            
+            if input.count > 1 {
+                for word in input {
+                    for char in word.reversed() {
+                        print(char, terminator: "")
+                    }
+                    cnt += 1
+                    if input.count > cnt {
+                        print("",terminator: " ")
+                    }
+                }
+                cnt = 0
+            }
+           
+            else {
+                for char in full.reversed() {
+                    print(char, terminator: "")
+                }
+            }
+            full = ""
         }
         
         if tag == true {
@@ -74,6 +76,7 @@ else {
             }
         }
     }
+    print("")
 }
 
 

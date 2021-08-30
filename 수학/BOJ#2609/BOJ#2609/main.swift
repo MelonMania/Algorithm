@@ -20,11 +20,9 @@ else {
     small = Int(input[0])!
 }
 
-print(big)
-print(small)
 
-for i in 0 ..< small {
-    if big % i == 0 && small % i == 0 {
+for i in 1 ... small {
+    if (big % i == 0) && (small % i == 0) {
         max = i
     }
 }
